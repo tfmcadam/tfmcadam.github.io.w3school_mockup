@@ -1,0 +1,180 @@
+/*! Navbar.HTML  */
+/* Vertical navigation */
+.ulNav {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #E7E9EB;
+}
+
+.ulNav a {
+    text-decoration-line: none;
+}
+
+/** add borders */
+
+.navBord {
+    border: 1px solid #555;
+}
+
+.liBot {
+    border-bottom: 1px solid #555;
+}
+
+/* does not add a border to the last element */
+li:last-child {
+    border-bottom: none;
+}
+
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    background-color: #E7E9EB;
+}
+
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* ! Vertical Navbar.HTML */
+
+.ulVertNav {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #E7E9EB;
+}
+
+.ulVertNav a {
+    text-decoration: none;
+}
+
+/* *Full height nav with in a div*/
+
+.sticky {
+    display: block;
+    max-height: 250px;
+    border: 1px solid #555;
+    overflow: auto;
+}
+
+.stickyNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #E7E9EB;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+/* ! Horizontal Nav additions */
+#ulHorNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 16px 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#ulHorNav li a {
+    display: inline;
+    padding: 16px 16px;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+}
+
+#ulHorNav li {
+    display: inline;
+    
+}
+
+#ulHorNav li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+#ulHorNav li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+#ulHorNav li a.activeblue {
+    background-color: rgb(0, 140, 186);
+    color: white;
+}
+
+#ulHorNav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.floatNav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.floatNav li{
+    float: left;
+}
+
+.floatNav li a {
+    display: block;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.floatNav li a:hover{
+    background-color: #111;
+}
+
+.floatNav li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* right border example */
+.border-right  {
+    border-right: 1px solid #bbb;
+}
+
+.top {
+    position:sticky;
+    top: 0;
+    width: 100%;
+}
+
+.bottom {
+    position: sticky;
+    top: 203px;
+    width: 100%;
+}
