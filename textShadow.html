@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/text-shadow.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Text-shadow</title>
+</head>
+
+<body class="main">
+    <div class="navbar">
+        <h1>w3Schools mockup</h1>
+        <ul>
+            <li class="navbarLi"><a href="#">Home</a></li>
+            <li class="navbarLi"><a href="#">News</a></li>
+            <li class="navbarLi"><a href="#">Contact</a></li>
+            <li class="navbarLi"><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <!-- side nav -->
+
+    <div class="sidenav">
+        <h2>CSS Basics</h2>
+        <a href="default.html">Home</a>
+        <a href="background.html">Background</a>
+        <a href="borders.html">Borders</a>
+        <a href="index.html">Index</a>
+        <a href="margin.html">Margin</a>
+        <a href="padding.html">Padding</a>
+        <button type="button" class="dropdown-btn">Navbar <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="navbar.html">NavBar</a>
+            <a href="verticalNav.html">Vertical Nav</a>
+            <a href="horizontalNav.html">Horizontal Nav</a>
+        </div>
+        <a class="active" href="textShadow.html">Text Shadow</a>
+        <a href="googlefonts.html">Google Fonts</a>
+        <h2>CSS Advanced</h2>
+        <a href="buttons.html">Buttons</a>
+    </div>
+    <h1>Text Shadow</h1>
+    <div class="between">
+        <a class="greenBtn" href="horizontalNav.html">
+            < Previous</a>
+
+                <a class="greenBtn" href="googlefonts.html"> Next > </a>
+    </div>
+    <div style="border-bottom: 1px dotted grey;"></div>
+    <h2>Text Shadow</h2>
+    <p>The <span class="red">text-shadow</span> property adds shadow to text</p>
+    <p>In the simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):</p>
+
+    <h1 class="text-shadow">Text Shadow Effect</h1>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+                h1 {
+                    <span class="red">text-shadow</span>: 2px 2px;
+                }
+            </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <p>Next, add a color (red) to the shadow:</p>
+    <h1 class="text-shadow-red">Text Shadow Effect!</h1>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+                h1 {
+                    <span class="red">text-shadow</span>:2px 2px red
+                }
+            </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+
+    <h2>More Text Shadow Examples</h2>
+    <h1 class="text-shadow-white">Text Shadow on a White Text</h1>
+    <div class="example">
+        <h2>Example 1</h2>
+        <div class="leftBorder">
+            <pre><code>
+                h1 {
+                    <span class="red">color</span>: white;
+                    <span class="red">text-shadow</span>: 2px 2px 4px #000000;
+                }
+            </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <h1 class="text-shadow-neon">Text Shadow with a Red Neon Glow</h1>
+    <div class="example">
+        <h2>Example 2</h2>
+        <div class="leftBorder">
+            <pre><code>
+                h1 {
+                    <span class="red">text-shadow</span>: 0 0 3px #ff0000;
+                }
+            </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <h1 class="text-shadow-redBlue-neon"> Text-shadow with a Red and Blue Neon Glow</h1>
+    <div class="example">
+        <h2>Example 3</h2>
+        <div class="leftBorder">
+            <pre><code>
+                h1 {
+                    <span class="red">text-shadow</span>: 0 0 3px #ff0000, 0 0 5px #0000ff; 
+                }
+            </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <h1 class="text-shadow-multi">White Text with a Multi-colored Shadow</h1>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+                h1 { 
+                    <span class="red">text-shadow</span>: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+                }
+            </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <div class="between">
+        <a class="greenBtn" href="horizontalNav.html">
+            < Previous</a>
+    
+                <a class="greenBtn" href="googlefonts.html"> Next > </a>
+    </div>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* body {
+    background-color: black;
+    background-image: url("https://www.seekpng.com/png/full/24-242056_water-png-images-picsart.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
+a {
+    text-decoration: none;
+}
+
+.position {
+    height: 250px;
+    background-position: left center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-image: url("https://toppng.com/uploads/preview/fish-1152312906604p8ryrpnc.png");
+}
+
+.demo {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.back1 {
+    background-color: blue;
+    opacity: 1;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back2 {
+    background-color: blue;
+    opacity: 0.6;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back3 {
+    background-color: blue;
+    opacity: 0.3;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back4 {
+    background-color: blue;
+    opacity: 0.1;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.first {
+    background-color: rgb(28, 28, 134, .6);
+}
+
+div.second {
+    background-color: rgb(28, 28, 134, .6);
+}
+
+div.third {
+    background-color: rgb(28, 28, 134, .3);
+}
+
+div.fourth {
+    background-color: rgb(28, 28, 134, .3);
+}
+
+.repeat-x {
+    height: 300px;
+    width: 100%;
+    background-image: url("https://toppng.com/uploads/preview/fish-1152312906604p8ryrpnc.png");
+    background-repeat: repeat-x;
+    background-size: 30%;
+    background-position: 30%;
+}
+
+.repeat-y {
+    height: 300px;
+    width: 100%;
+    background-size: 15%;
+
+    background-image: url("https://toppng.com/uploads/preview/fish-1152312906604p8ryrpnc.png");
+    background-repeat: repeat-y;
+    background-position: 30%;
+}
