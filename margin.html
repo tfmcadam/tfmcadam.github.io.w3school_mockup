@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/margins.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Margin</title>
+</head>
+<body class="main">
+
+<!-- side nav -->
+
+    <div class="sidenav">
+        <div class="navbar">
+            <h1>w3Schools mockup</h1>
+            <ul>
+                <li class="navbarLi"><a href="#">Home</a></li>
+                <li class="navbarLi"><a href="#">News</a></li>
+                <li class="navbarLi"><a href="#">Contact</a></li>
+                <li class="navbarLi"><a href="#">About</a></li>
+            </ul>
+        </div>
+        <h2>CSS Basics</h2>
+        <a href="default.html">Home</a>
+        <a href="background.html">Background</a>
+        <a href="borders.html">Borders</a>
+        <!-- <a href="index.html">Index</a> -->
+        <a class="active" href="margin.html">Margin</a>
+        <a href="padding.html">Padding</a>
+        <button type="button" class="dropdown-btn">Navbar <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="navbar.html">NavBar</a>
+            <a href="verticalNav.html">Vertical Nav</a>
+            <a href="horizontalNav.html">Horizontal Nav</a>
+        </div>
+        <a href="textShadow.html">Text Shadow</a>
+        <h2>CSS Advanced</h2>
+        <a href="buttons.html">Buttons</a>
+    </div>
+    <h1>Margins</h1>
+    <div class="between">
+        <a class="greenBtn" href="index.html">< Previous</a>
+            
+        <a class="greenBtn" href="padding.html"> Next > </a>
+    </div>
+
+<!-- Margins -->
+
+    <div style="border-bottom: 1px dotted grey;"></div>
+    <p style="margin: 40px;">Margins are used to create space around elements, outside of any defined borders</p>
+    <div style="border-bottom: 1px dotted grey;"></div>
+    <div>
+        <h4 class="marginSeventy">This element is surrounded by a margin of 70px</h4>
+    </div>
+    <div style="border-bottom: 1px dotted grey;"></div>
+
+<!--Margin indivuidual sides  -->
+
+    <h2>Margin - Individual Sides</h2>
+    <p>CSS has properties for specifying the margin for each side element:</p>
+    <ul>
+        <li>margin-top</li>
+        <li>margin-right</li>
+        <li>margin-bottom</li>
+        <li>margin-left</li>
+    </ul>
+    <p>All the margin properties can have the following values</p>
+    <ul>
+        <li>auto - the browser calculates the margin</li>
+        <li>length - specifies a margin in px, pt, cm, etc</li>
+        <li>% - specifies a margin in % of the width of the containing element</li>
+        <li>inherit - specifies that the margin should be inherited from the parent element</li>
+    </ul>
+    <p><strong>Tip:</strong> Negative values are allowed</p>
+    <div style="border:4px solid black; margin-bottom: 5px;">
+        <p class="differentMargin">Margin is set to a different px on each side</p>
+    </div>
+    <div style="border-bottom: 1px dotted grey;"></div>
+
+<!-- Margin shorthand -->
+
+    <h2>Margin shorthand</h2>
+    <p>The following code gives a Margin of top, right, bottom, and left</p>
+    <pre><code>p{
+        margin: 25px 50px 75px 100px
+    }
+    </code></pre>
+    <p>If the <strong>Margin</strong> has 3 values:</p>
+    <p>you get top 25px, right and left margin 50px and bottom margin 100px</p>
+    <pre><code>p{
+        margin: 25px 50px 100px
+    }
+    </code></pre>
+    <p>If the <strong>Margin</strong> has 2 values:</p>
+    <p>You get top and bottom 25px with the right and left margin 100px</p>
+    <pre><code>p{
+        margin: 25px  100px
+    }
+    </code></pre>
+    <p>If the <strong>Margin</strong> has 1 value:</p>
+    <p>All the sides have the same value</p>
+    <div style="border-bottom: 1px dotted grey;"></div>
+
+<!-- Margin auto -->
+
+    <h2>The auto value</h2>
+    <p>You can set the margin property to <strong style="color:red;">auto</strong> to horizontally center the element in
+        its container</p>
+    <p>The element will then take up the specified width, and the remaining space will be split between the right and
+        left</p>
+    <div class="auto"></div>
+    <div style="border-bottom: 1px dotted grey;"></div>
+
+<!-- margin inherit -->
+
+    <h2>The inherit Value</h2>
+    <p>The shows how the left margin of the (p class="ex1") is inherited from the parent element ("div") with
+        margin-left: inherit;</p>
+    <div class="parent">
+        <p class="ex1">I am the child</p>
+    </div>
+    <div style="border-bottom: 1px dotted grey; margin-top: 5px;"></div>
+
+    <!-- Margin Collapse -->
+
+    <h2>Margin Collapse</h2>
+    <p>Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of
+        the two margins.</p>
+    <p>This only happens on the top and bottom margins, not the left and right.</p>
+    <pre><code>.top{
+    margin: 0 0 50px 0;
+    }
+    
+    .bottom{
+    margin: 20px 0 0 0;
+    }
+    </code></pre>
+    <p> The margin of 50px from .top and 20px from .bottom should give a margin of 70px but because of margin collaspse it stays at 50px due to 50px being the larger number. If this happened between the left and right sides the margin would be 70px.</p>
+    <h1 class="top">This is the top</h1>
+    <h2 class="bottom">This is the bottom</h2>
+<script src="../JavaScript/script.js"></script>
+</body>
+
+</html>
