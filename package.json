@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://tfmcadam.github.io.w3school_mockup",
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "deploy": "master -d dist"
   },
   "keywords": [
     "Terrance",
