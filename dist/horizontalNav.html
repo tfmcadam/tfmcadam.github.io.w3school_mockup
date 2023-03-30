@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Horizontal Navbar</title>
+</head>
+
+<body class="main">
+    <div class="navbar">
+    <h1>w3Schools mockup</h1>
+    <ul>
+        <li class="navbarLi"><a href="#">Home</a></li>
+        <li class="navbarLi"><a href="#">News</a></li>
+        <li class="navbarLi"><a href="#">Contact</a></li>
+        <li class="navbarLi"><a href="#">About</a></li>
+    </ul>
+    </div>
+    <div class="sidenav">
+        <h2>CSS Basics</h2>
+        <a href="default.html">Home</a>
+        <a href="background.html">Background</a>
+        <a href="borders.html">Borders</a>
+        <!-- <a href="index.html">Index</a> -->
+        <a href="margin.html">Margin</a>
+        <a href="padding.html">Padding</a>
+        <button type="button" class="dropdown-btn active">Navbar <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container open">
+            <a href="navbar.html">NavBar</a>
+            <a href="verticalNav.html">Vertical Nav</a>
+            <a class="active" href="horizontalNav.html">Horizontal Nav</a>
+        </div>
+        <a href="textShadow.html">Text Shadow</a>
+        <a href="googlefonts.html">Google Fonts</a>s
+        <h2>CSS Advanced</h2>
+        <a href="buttons.html">Buttons</a>
+    </div>
+
+    <h1>Horizontal Navigation Bar</h1>
+    <div class="between">
+        <a class="greenBtn" href="verticalNav.html" title="Previous Page">
+            < Previous </a>
+                <a class="greenBtn" href="textShadow.html" title="Next page"> Next > </a>
+    </div>
+    <div style="border-bottom: 1px dotted grey;"></div>
+    <h2>Horizontal Nav bar</h2>
+
+    <!-- *top of page button -->
+    <button onclick="ScrollToTop();return false;" id="topBtn" title="top"><i class="arrow fa fa-arrow-up"></i></button>
+    <div>
+        <ul id="ulHorNav">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li style="float:right;"><a href="#">About</a></li>
+        </ul>
+    </div>
+    <p>There are two ways to create a horizontal navigation bar. Using <strong>Inline</strong> or
+        <strong>floating </strong>list items.
+    </p>
+    <h3>Inline List Items</h3>
+    <p>One way to build a horizontal navigation bar is to specify the &lt;li&gt; elements as inline, in addition to the
+        "standard" code from the previous page:</p>
+
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+            li {
+                <span class="red">display</span>: inline;
+            }
+        </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <h2>Example Explained</h2>
+    <ul>
+        <li><span class="red">display: inline;</span> - By default, &lt;li&gt; are block elements. Here we remove the
+            line breaks before and after each list item, to display them on one line</li>
+    </ul>
+
+    <h2>Floating List Items</h2>
+    <p>Another way of creating a horizontal navigation bar is to float the &lt;li&gt; elements, and specify a layout for
+        the naviagation links:</p>
+
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+                li {
+                    <span class="red">float</span>: left;
+                }
+
+                a {
+                    <span class="red">display</span>: block;
+                    <span class="red">padding</span>: 8px;
+                    <span class="red">background-color</span>: #dddddd
+                }
+            </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <h2>Example Explained</h2>
+    <ul>
+        <li><span class="red">float:left:</span> - Use float to get block elements to float next to each other</li>
+        <li><span class="red">display: block;</span> - Allows us to specify padding ( and height, width, margins, etc.
+            if you want</li>
+        <li><span class="red">padding: 8px;</span> - Specify some padding between each &lt;a&gt; element, to make them
+            look good</li>
+        <li><span class="red">background-color: #dddddd;</span> - Add a gray background-color to each &lt;a&gt; element
+        </li>
+    </ul>
+    <p><strong>Tip:</strong> Add the background-color to &lt;ul&gt; instead of each &lt;a&gt; element if you want a
+        full-width background color:</p>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+                ul{
+                    <span class="red">background-color</span>: #dddddd;
+                }
+            </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+
+
+    <h2>Horizontal Navigation Bar Example</h2>
+    <p>Create a basic horizontal navigation bar with a dark background color and change the background color of the
+        links when the user moves the mouse over them:</p>
+    <ul class="floatNav">
+        <li><a class="" href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+                ul {
+                    <span class="red">list-style-type</span>: none;
+                    <span class="red">margin</span>: 0;
+                    <span class="red">padding</span>: 0;
+                    <span class="red">overflow</span>:hidden;
+                    <span class="red">background-color</span>:#333;
+                }
+
+                li {
+                    <span class="red">float</span>:left;
+                }
+
+                li a {
+                    <span class="red">display</span>: block;
+                    <span class="red">color</span>: white;
+                    <span class="red">text-align</span>: center;
+                    <span class="red">padding</span>: 14px 16px;
+                    <span class="red">text-decoration</span>: none;
+                }
+
+                <span class="green">/* Change the link color to #111(black) on hover */</span>
+                li a:hover {
+                    <span class="red">background-color</span>: #111
+                }
+            </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+
+
+    <h2>Active/Current Navigation Link</h2>
+    <p>Add an "active" class to the current link to let the user know which page he/she are on:</p>
+    <ul class="floatNav">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+                .active {
+                    <span class="red"> background-color</span>: #04AA6D;
+                }
+            </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <h2>Right-Align Links</h2>
+    <p>Right-align links by floating the list items to the right (<span class="red">float: right;</span>):</p>
+    <ul class="floatNav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li style="float:right;"><a class="active" href="#">About</a></li>
+    </ul>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a <span class="red">href</span>="#home"&gt;Home &lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a <span class="red">href</span>="#news"&gt;News &lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a <span class="red">href</span>="#contact"&gt;Contact &lt;/a&gt;&lt;/li&gt;
+                &lt;li <span class="red">style</span>="float:right;"&gt;&lt;a <span class="red">href</span>="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <h2>Border Dividers</h2>
+    <p>add the <span class="red">border-right</span> property to &lt;li&gt; to create link dividers</p>
+    <ul class="floatNav">
+        <li class="border-right"><a href="#">Home</a></li>
+        <li class="border-right"><a href="#">News</a></li>
+        <li class="border-right"><a href="#">Contact</a></li>
+        <li style="float:right;"><a class="active" href="#">About</a></li>
+    </ul>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+        <span class="green">/* Add a grey border to all list items, except the last one item(last-child) */</span>
+
+            li {
+                <span class="red">border-right</span>: 1px solid #bbb;
+            }
+
+            li:last-child {
+                <span class="red">border-right</span>: none;
+            }
+        </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <h2> Fixed Navigation Bar</h2>
+    <p>Make a navigation bar stay at the top or bottom of the page, even when the user scrolls the page:</p>
+    <div class="around gap-20">
+        <div class="sticky">
+            <div class="top">
+                <ul class="floatNav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li style="float:right;"><a class="active" href="#">About</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Fixed Top Nav</h2>
+                <h4>The navigation bar will stay at the top of the page while scrolling</h4>
+                <p>look at all this text scrolling by...</p>
+                <p>look at all this text scrolling by...</p>
+                <p>look at all this text scrolling by...</p>
+                <p>look at all this text scrolling by...</p>
+                <p>look at all this text scrolling by...</p>
+                <p>look at all this text scrolling by...</p>
+                <p>look at all this text scrolling by...</p>
+            </div>
+        </div>
+        <div class="sticky">
+            <div class="bottom">
+                <ul class="floatNav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li style="float:right;"><a class="active" href="#">About</a></li>
+                </ul>
+            </div>
+            <h2>Fixed Bottom Nav</h2>
+            <h4>The navigation bar will will stay at the bottom of the page while scrolling</h4>
+            <p>look at all this text scrolling by...</p>
+            <p>look at all this text scrolling by...</p>
+            <p>look at all this text scrolling by...</p>
+            <p>look at all this text scrolling by...</p>
+            <p>look at all this text scrolling by...</p>
+            <p>look at all this text scrolling by...</p>
+            <p>look at all this text scrolling by...</p>
+        </div>
+    </div>
+    <div class="between">
+        <a class="greenBtn" href="verticalNav.html">
+            < Previous </a>
+                <a class="greenBtn" href="textShadow.html"> Next > </a>
+    </div>
+    <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>

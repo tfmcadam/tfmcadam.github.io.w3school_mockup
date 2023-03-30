@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <title>Default</title>
+</head>
+
+<!-- ? Adding Classes -->
+<style>
+    .special {
+        color: blue;
+    }
+
+    .mystyle {
+        color: red;
+    }
+
+    .intro {
+        background: pink;
+    }
+
+    .table {
+        color: red;
+    }
+</style>
+
+<body class="main">
+    <div class="navbar">
+        <h1>w3Schools mockup</h1>
+        <ul>
+            <li class="navbarLi"><a href="#">Home</a></li>
+            <li class="navbarLi"><a href="#">News</a></li>
+            <li class="navbarLi"><a href="#">Contact</a></li>
+            <li class="navbarLi"><a href="#">About</a></li>
+        </ul>
+    </div>
+    <div class="sidenav">
+        <h2>CSS Basics</h2>
+        <a class="active" href="default.html">Home</a>
+        <a href="background.html">Background</a>
+        <a href="borders.html">Borders</a>
+        <!-- <a href="index.html">Index</a> -->
+        <a href="margin.html">Margin</a>
+        <a href="padding.html">Padding</a>
+        <button type="button" class="dropdown-btn">Navbar <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container open">
+            <a href="navbar.html">NavBar</a>
+            <a href="verticalNav.html">Vertical Nav</a>
+            <a href="horizontalNav.html">Horizontal Nav</a>
+        </div>
+        <a href="textShadow.html">Text Shadow</a>
+        <a href="googlefonts.html">Google Fonts</a>
+        <h2>CSS Advanced</h2>
+        <a href="buttons.html">Buttons</a>
+    </div>
+
+    <p class="special">This is the special class</p>
+    <h1 class="mystyle">This is the default page</h1>
+
+    <p>
+        <img id="smiley" src="https://media.tenor.com/yFi06hL-W1IAAAAM/smiley.gif" style="float: right;">
+        This is a paragraph.
+        This paragraph contains an image
+    </p>
+    <h2 class="intro table">Tables</h2>
+
+    <table width="300">
+        <caption>Names</caption>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <h2>Lists</h2>
+    <h4>Unordered Lists</h4>
+    <!-- use square bullets instead of default circles -->
+    <ul style="list-style-type:square;">
+        <li>Coffee</li>
+        <li>Cream</li>
+        <li>Milk</li>
+        <li>Butter</li>
+    </ul>
+
+    <h4>Ordered List</h4>
+
+    <ol type="I">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <!-- description list -->
+    <h4>Description List</h4>
+    <dl>
+        <dt> Coffee</dt>
+        <dd>-Black Hot Drink</dd>
+        <dt>Milk</dt>
+        <dd>-White cold drink</dd>
+    </dl>
+
+    <p id="demo">Hi</p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello World";
+        document.getElementById("demo").style.fontSize = "40px";
+        document.getElementById("demo").style.color = "red";
+
+        // change the image
+        document.getElementById("smiley").src = "https://media.tenor.com/WESW8x1CdXcAAAAM/pug-shocked.gif"
+    </script>
+
+    <p>Code example:</p>
+    <pre><code>var person ={   
+            firstName = "Bill",
+            lastName = "Billings"
+    }
+</code></pre>
+
+    <!-- define variable -->
+    <p>A simple math equation: <var>x</var> = 3 + 2;</p>
+    <img src="https://www.pngkey.com/png/detail/748-7485838_img-tree-png.png" alt="Img_tree Png@pngkey.com">
+    <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>

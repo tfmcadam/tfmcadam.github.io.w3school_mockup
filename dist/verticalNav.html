@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Vertical Nav</title>
+</head>
+
+<body class="main">
+    <div class="sidenav">
+        <div class="navbar">
+            <h1>w3Schools mockup</h1>
+            <ul>
+                <li class="navbarLi"><a href="#">Home</a></li>
+                <li class="navbarLi"><a href="#">News</a></li>
+                <li class="navbarLi"><a href="#">Contact</a></li>
+                <li class="navbarLi"><a href="#">About</a></li>
+            </ul>
+        </div>
+        <h2>CSS Basics</h2>
+        <a href="default.html">Home</a>
+        <a href="background.html">Background</a>
+        <a href="borders.html">Borders</a>
+        <!-- <a href="index.html">Index</a> -->
+        <a href="margin.html">Margin</a>
+        <a href="padding.html">Padding</a>
+        <button type="button" class="dropdown-btn">Navbar <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container open">
+            <a href="navbar.html">NavBar</a>
+            <a class="active" href="verticalNav.html">Vertical Nav</a>
+            <a href="horizontalNav.html">Horizontal Nav</a>
+        </div>
+        <a href="textShadow.html">Text Shadow</a>
+        <a href="googlefonts.html">Google Fonts</a>
+        <h2>CSS Advanced</h2>
+        <a href="buttons.html">Buttons</a>
+    </div>
+    <h1>Vertical Nav</h1>
+    <div class="between">
+        <a class="greenBtn" href="navbar.html">
+            < Previous </a>
+                <a class="greenBtn" href="horizontalNav.html"> Next > </a>
+    </div>
+    <div class="grey"></div>
+    <div style="margin:1%;">
+        <h2>Vertical Navigation Bar</h2>
+        <ul class="ulVertNav">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <p>To Build a vertical navigation, you can style the &lt;a&gt; elements inside the list, in addition to the code
+            from the previous page:</p>
+    </div>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+        li a {
+            <span class="red">display</span>: block;
+            <span class="red">width</span>: 60px;
+        }
+    </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <h3>Example explained</h3>
+    <ul>
+        <li><span class="red">display: block;</span> - Displaying the links as block elements makes the while link area
+            clickable(not just the text), and it allows us to specify the width(and padding, margin, height, etc. if you
+            want)</li>
+        <li><span class="red">width: 60px;</span> - Block elements take up the full width available by default. We want
+            to specify a width of 60px.</li>
+    </ul>
+    <p>You can also set the width of &lt;ul&gt;, and remove the width of &lt;a&gt;, as they will take up the full width
+        avaible when displayed as block elements. This will produce the same result as our previous example:</p>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+                ul {
+                    <span class="red">list-style-type</span>: none;
+                    <span class="red">margin</span>: 0;
+                    <span class="red">padding</span>: 0;
+                    <span class="red">width</span>: 60px;
+                }
+
+                li a {
+                    <span class="red">display</span>: block;
+                }
+            </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <h2>Vertical Navigation Bar Examples</h2>
+    <p>Create a basic navigation bar with a gray background color and change the background color of the links when the
+        user moves the mouse over them:</p>
+    <ul class="ulNav">
+        <li><a>Home</a></li>
+        <li><a>News</a></li>
+        <li><a>Contact</a></li>
+        <li><a>About</a></li>
+    </ul>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+                ul {
+                    <span class="red">list-style-type</span>: none;
+                    <span class="red">margin</span>: 0;
+                    <span class="red">padding</span>: 0;
+                    <span class="red">width</span>: 200px;
+                    <span class="red">background-color</span>: #f1f1f1;
+                }
+
+                li a {
+                    <span class="red">display</span>: block;
+                    <span class="red">color</span>: #000;
+                    <span class="red">padding</span>: 8px 16px;
+                    <span class="red">text-decoration</span>: none;
+                }
+
+                <!-- Change the link color on hover -->
+                li a:hover {
+                    <span class="red">background-color</span>: #555;
+                    <span class="red">color</span>: white;
+                }
+            </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <h2>Active/Current Navigation Link</h2>
+    <p>Add an "active" class to the current link to let the user know which page he/she is on:</p>
+    <ul class="ulNav ">
+        <li><a class="active">Home</a></li>
+        <li><a>News</a></li>
+        <li><a>Contact</a></li>
+        <li><a>About</a></li>
+    </ul>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+                .active {
+                    <span class="red">background-color</span>: #04AA6D
+                    <span class="red">color</span>: white
+                }
+            </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <h2>Center Links & Add Borders</h2>
+    <p>Add <span class="red">text-align: center</span> to &lt;li&gt; or &lt;a&gt; to center the links</p>
+    <p>Add the <span class="red">border</span> property to &lt;ul&gt; add a a border around the nav bar. If you also
+        want borders inside the navabar, add a <span class="red">border-bottom</span> to all &lt;li&gt; elements, except
+        for the last one:</p>
+    <div class="around">
+        <ul class="ulNav ">
+            <li class="text-center"><a class="active">Home</a></li>
+            <li class="text-center"><a>News</a></li>
+            <li class="text-center"><a>Contact</a></li>
+            <li class="text-center"><a>About</a></li>
+        </ul>
+        <ul class="ulNav navBord">
+            <li class="text-center"><a class="active">Home</a></li>
+            <li class="text-center"><a>News</a></li>
+            <li class="text-center"><a>Contact</a></li>
+            <li class="text-center"><a>About</a></li>
+        </ul>
+        <ul class="ulNav navBord">
+            <li class="text-center liBot"><a class="active">Home</a></li>
+            <li class="text-center liBot"><a>News</a></li>
+            <li class="text-center liBot"><a>Contact</a></li>
+            <li class="text-center liBot"><a>About</a></li>
+        </ul>
+    </div>
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+            ul {
+                <span class="red">border</span>: 1px solid #555;
+            }
+
+            li {
+                <span class="red">text-align</span>: center;
+                <span class="red">border-bottom</span>: 1px solid #555;
+            }
+
+            li:last-child {
+                <span class="red">border-bottom</span>: none;
+            }
+        </code></pre>
+        </div>
+        <a class="greenBtn">Try it yourself <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <h2>Full-height Fixed Vertical Navbar</h2>
+    <p>Create a full-height, "sticky" side navigation</p>
+    <div class="sticky">
+        <div height="100%" style="position:relative">
+            <ul class="stickyNav">
+                <li><a class="active">Home</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+                <li><a>About</a></li>
+            </ul>
+        </div>
+        <div style="margin-left: 1%; overflow: auto;">
+            <h2>Fixed Full-height Side Nav</h2>
+            <h4>Try to scroll this area, and see how the sidenav sticks to the page</h4>
+            <p>some text here...</p>
+            <p>some text here...</p>
+            <p>some text here...</p>
+            <p>some text here...</p>
+            <p>some text here...</p>
+            <p>some text here...</p>
+            <p>some text here...</p>
+            <p>some text here...</p>
+            <p>some text here...</p>
+            <p>some text here...</p>
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>Example</h2>
+        <div class="leftBorder">
+            <pre><code>
+        ul {
+            <span class="red">list-style-type</span>: none;
+            <span class="red">margin</span>: 0;
+            <span class="red">padding</span>: 0;
+            <span class="red">width</span>: 25%;
+            <span class="red">background-color</span>: #f1f1f1;
+            
+            <span class="red">height</span>: 100%;  <span class="green">/* Full Height */</span>
+            <span class="red">position</span>: fixed; <span class="green">/* Make it stick, even on scroll */</span>
+            <span class="red">overflow</span>: auto; <span class="green">/* Enable scrolling if the sidenav has too much content</span>
+        }
+            
+            </code></pre>
+        </div>
+    </div>
+    <p><strong>Note:</strong> This example might not work properly on mobile devices.</p>
+    <!-- * Nav buttons -->
+    <div class="between">
+        <a class="greenBtn" href="navbar.html">< Previous </a>
+        <a class="greenBtn" href="horizontalNav.html"> Next > </a>
+    </div>
+</body>
+<script src="../JavaScript/script.js"></script>
+</body>
+
+</html>

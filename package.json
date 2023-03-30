@@ -1,0 +1,19 @@
+{
+  "name": "w3school_mockup",
+  "version": "1.0.0",
+  "description": "w3School Mock up",
+  "main": "index.js",
+  "homepage": "https://tfmcadam.github.io.w3school_mockup",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "Terrance",
+    "McAdam"
+  ],
+  "author": "Terrance McAdam",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
