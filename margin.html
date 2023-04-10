@@ -11,20 +11,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Margin</title>
 </head>
+
 <body class="main">
 
-<!-- side nav -->
+    <!-- side nav -->
 
+    <div class="navbar">
+        <h1>w3Schools mockup</h1>
+        <ul>
+            <li class="navbarLi"><a href="#">Home</a></li>
+            <li class="navbarLi"><a href="#">News</a></li>
+            <li class="navbarLi"><a href="#">Contact</a></li>
+            <li class="navbarLi"><a href="#">About</a></li>
+        </ul>
+    </div>
     <div class="sidenav">
-        <div class="navbar">
-            <h1>w3Schools mockup</h1>
-            <ul>
-                <li class="navbarLi"><a href="#">Home</a></li>
-                <li class="navbarLi"><a href="#">News</a></li>
-                <li class="navbarLi"><a href="#">Contact</a></li>
-                <li class="navbarLi"><a href="#">About</a></li>
-            </ul>
-        </div>
         <h2>CSS Basics</h2>
         <a href="index.html">Index</a>
         <a href="default.html">Home</a>
@@ -45,12 +46,13 @@
     </div>
     <h1>Margins</h1>
     <div class="between">
-        <a class="greenBtn" href="index.html">< Previous</a>
-            
-        <a class="greenBtn" href="padding.html"> Next > </a>
+        <a class="greenBtn" href="index.html">
+            < Previous</a>
+
+                <a class="greenBtn" href="padding.html"> Next > </a>
     </div>
 
-<!-- Margins -->
+    <!-- Margins -->
 
     <div style="border-bottom: 1px dotted grey;"></div>
     <p style="margin: 40px;">Margins are used to create space around elements, outside of any defined borders</p>
@@ -60,7 +62,7 @@
     </div>
     <div style="border-bottom: 1px dotted grey;"></div>
 
-<!--Margin indivuidual sides  -->
+    <!--Margin indivuidual sides  -->
 
     <h2>Margin - Individual Sides</h2>
     <p>CSS has properties for specifying the margin for each side element:</p>
@@ -83,7 +85,7 @@
     </div>
     <div style="border-bottom: 1px dotted grey;"></div>
 
-<!-- Margin shorthand -->
+    <!-- Margin shorthand -->
 
     <h2>Margin shorthand</h2>
     <p>The following code gives a Margin of top, right, bottom, and left</p>
@@ -107,7 +109,7 @@
     <p>All the sides have the same value</p>
     <div style="border-bottom: 1px dotted grey;"></div>
 
-<!-- Margin auto -->
+    <!-- Margin auto -->
 
     <h2>The auto value</h2>
     <p>You can set the margin property to <strong style="color:red;">auto</strong> to horizontally center the element in
@@ -117,7 +119,7 @@
     <div class="auto"></div>
     <div style="border-bottom: 1px dotted grey;"></div>
 
-<!-- margin inherit -->
+    <!-- margin inherit -->
 
     <h2>The inherit Value</h2>
     <p>The shows how the left margin of the (p class="ex1") is inherited from the parent element ("div") with
@@ -141,10 +143,12 @@
     margin: 20px 0 0 0;
     }
     </code></pre>
-    <p> The margin of 50px from .top and 20px from .bottom should give a margin of 70px but because of margin collaspse it stays at 50px due to 50px being the larger number. If this happened between the left and right sides the margin would be 70px.</p>
+    <p> The margin of 50px from .top and 20px from .bottom should give a margin of 70px but because of margin collaspse
+        it stays at 50px due to 50px being the larger number. If this happened between the left and right sides the
+        margin would be 70px.</p>
     <h1 class="top">This is the top</h1>
     <h2 class="bottom">This is the bottom</h2>
-<script src="./JavaScript/script.js"></script>
+    <script src="./JavaScript/script.js"></script>
 </body>
 
 </html>
